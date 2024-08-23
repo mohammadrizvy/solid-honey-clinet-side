@@ -1,4 +1,7 @@
 import DashboardHome from "../Dashboard/DashboardHome/DashboardHome";
+import CustomerPayment from "../Dashboard/DashboardMain/Payment/CustomerPayment/CustomerPayment";
+import StaffPayment from "../Dashboard/DashboardMain/Payment/StaffPayment/StaffPayment";
+import SupplierPayment from "../Dashboard/DashboardMain/Payment/SupplierPayment/SupplierPayment";
 import ProductCategory from "../Dashboard/DashboardMain/Product/ProductCategory/ProductCategory";
 import ProductEntry from "../Dashboard/DashboardMain/Product/ProductEntry/ProductEntry";
 import ProductList from "../Dashboard/DashboardMain/Product/ProductList/ProductList";
@@ -10,8 +13,13 @@ import ProductReturn from "../Dashboard/DashboardMain/ProductSell/ProductReturn/
 import ProductSellList from "../Dashboard/DashboardMain/ProductSell/ProductSellList/ProductSellList";
 import ProductsSells from "../Dashboard/DashboardMain/ProductSell/ProductSells/ProductsSells";
 import SingleProductSell from "../Dashboard/DashboardMain/ProductSell/SingleproductSell/SingleProductSell";
+import StockLow from "../Dashboard/DashboardMain/Stock/LowStock/StockLow";
+import StockCategory from "../Dashboard/DashboardMain/Stock/StockCategory/StockCategory";
+import StockDamage from "../Dashboard/DashboardMain/Stock/StockDamage/StockDamage";
+import StockExpiration from "../Dashboard/DashboardMain/Stock/StockExpiration/StockExpiration";
+import StockExpired from "../Dashboard/DashboardMain/Stock/StockExpried/StockExpired";
+import StockProduct from "../Dashboard/DashboardMain/Stock/StockProduct/StockProduct";
 import DashboardLayout from "../Layout/DashboardLayout/DashboardLayout";
-
 
 const dashboardRoutes = {
   path: "/dashboard",
@@ -25,55 +33,97 @@ const dashboardRoutes = {
     },
     {
       path: "product-entry",
-      element: <ProductEntry/>,
+      element: <ProductEntry />,
     },
     {
       path: "products-entry",
-      element: <ProductsEntry/>,
+      element: <ProductsEntry />,
     },
     {
       path: "product-list",
-      element: <ProductList/>,
+      element: <ProductList />,
     },
     {
       path: "product-category",
-      element: <ProductCategory/>,
+      element: <ProductCategory />,
     },
     //!Main Items
     //? Products-buy
     {
       path: "product-buy",
-      element: <ProductBuy/>,
+      element: <ProductBuy />,
     },
     {
       path: "product-buy-list",
-      element: <BuyList/>,
+      element: <BuyList />,
     },
     //!Main Items
     //? Products-sell
     {
       path: "product-sell-retail",
-      element: <SingleProductSell/>,
+      element: <SingleProductSell />,
     },
     {
       path: "product-sells",
-      element: <ProductsSells/>,
+      element: <ProductsSells />,
     },
     {
       path: "product-sell-list",
-      element: <ProductSellList/>,
+      element: <ProductSellList />,
     },
     {
       path: "product-return",
-      element: <ProductReturn/>,
+      element: <ProductReturn />,
     },
     {
       path: "product-list-pending",
-      element: <ProductListPending/>,
+      element: <ProductListPending />,
+    },
+
+    //!Main Items
+    //? stock
+    {
+      path: "view-stock-full",
+      element: <StockProduct/>,
+    },
+    {
+      path: "view-stock-category",
+      element: <StockCategory />,
+    },
+    {
+      path: "view-stock-low",
+      element: <StockLow />,
+    },
+
+    {
+      path: "view-stock-expiretion",
+      element: <StockExpiration />,
+    },
+
+    {
+      path: "view-stock-expired",
+      element: <StockExpired />,
+    },
+    {
+      path: "product-damage",
+      element: <StockDamage />,
+    },
+
+    //!Main Items
+    //? Payment
+    {
+      path: "payment-customer",
+      element: <CustomerPayment />,
+    },
+    {
+      path: "payment-supplier",
+      element: <SupplierPayment/>,
+    },
+    {
+      path: "payment-stuff",
+      element: <StaffPayment />,
     },
     
-    
-    // Add more routes as needed
   ],
 };
 

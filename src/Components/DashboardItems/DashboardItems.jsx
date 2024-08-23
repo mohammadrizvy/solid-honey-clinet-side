@@ -163,40 +163,40 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="view-stock-full">
                 <GoStack />
                 পণ্য স্টক
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="view-stock-category">
                 <BiSolidCategoryAlt />
                 ক্যাটাগরী স্টক
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="view-stock-low">
                 <FaArrowTrendDown />
                 অপর্যাপ্ত স্টক
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="view-stock-expiretion">
                 <RiAlarmWarningLine />
                 মেয়াদ শেষ পর্যায়ে
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="view-stock-expired">
                 <GiButterflyWarning />
                 মেয়াদ উত্তীর্ণ পণ্য
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="product-damage">
                 <TbViewfinderOff />
                 ড্যামেজ/লস্ট
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -210,24 +210,24 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="payment-customer">
                 {" "}
                 <TbUserDollar />
                 ক্রেতা পেমেন্ট
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="payment-supplier">
                 {" "}
                 <FaTruckArrowRight />
                 সরবরাহকারী পেমেন্ট
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="payment-stuff">
                 <TbUsersGroup />
                 কর্মীর বেতন পেমেন্ট
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -241,24 +241,24 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="">
                 {" "}
                 <CgUserAdd />
                 ক্রেতা এন্ট্রি
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 {" "}
                 <TbUsers />
                 ক্রেতার তালিকা
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <PiHandCoinsFill />
                 পয়েন্ট ম্যানেজ
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -272,16 +272,16 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="">
                 <TbTruckDelivery />
                 সরবরাহকারী এন্ট্রি
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <CiViewList />
                 সরবরাহকারী তালিকা
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -295,38 +295,38 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="">
                 <LuFileInput />
                 লেনদেন এন্ট্রি
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <CiMemoPad />
                 সকল লেনদেন সমূহ
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <AiOutlineTransaction />
                 লেনদেন খাত সমূহ
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <FaMoneyBillTransfer />
                 ব্যালেন্স ট্রান্সফার
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
       </li>
 
       <li>
-        <a>
+        <Link to="">
           <RiListSettingsLine />
           প্রতিবেদন
-        </a>
+        </Link>
       </li>
 
       <li>
@@ -337,28 +337,28 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="">
                 <FaSms />
                 সেন্ড এসএমএস
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <MdOutlineSms />
                 বকেয়া এসএমএস
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <MdSmsFailed />
                 বাল্ক এসএমএস
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <TbMoneybag />
                 SMS Balance
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -372,16 +372,16 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="">
                 <TiUserAdd />
                 এড ইউজার
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="">
                 <FaUsers />
                 ইউজার তালিকা
-              </a>
+              </Link>
             </li>
           </ul>
         </details>

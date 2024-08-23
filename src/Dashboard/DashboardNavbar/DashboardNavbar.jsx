@@ -9,7 +9,7 @@ const DashboardNavbar = ({ onDrawerToggle }) => {
       <div className="navbar rounded-b-xl sticky bg-base-200 ">
         <div className="navbar-start">
           
-          <a className="btn btn-ghost text-xl">POS SOLID</a>
+          <a className="btn btn-ghost text-2xl">Solid Honey-সলিড মধু</a>
           {/* Drawer toggle button for mobile view */}
           <label
             htmlFor="my-drawer-2"
