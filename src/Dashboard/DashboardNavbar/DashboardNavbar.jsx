@@ -1,33 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ThemeToogle from "../../Components/ui/ThemeToogle";
+import ThemeToggle from "../../Components/ui/ThemeToogle";
+import { MdMenuOpen } from "react-icons/md";
 
-const DashboardNavbar = () => {
+const DashboardNavbar = ({ onDrawerToggle }) => {
   return (
-    <div className="mx-6 ">
-      <div className="navbar rounded-b-xl sticky bg-base-200">
+    <div className="mx-6 bangla-regular">
+      <div className="navbar rounded-b-xl sticky bg-base-200 ">
         <div className="navbar-start">
+          
           <a className="btn btn-ghost text-xl">POS SOLID</a>
-            <ThemeToogle></ThemeToogle>
+          {/* Drawer toggle button for mobile view */}
+          <label
+            htmlFor="my-drawer-2"
+            className=" cursor-pointer lg:hidden "
+            onClick={onDrawerToggle}
+          >
+           <MdMenuOpen size={23} />
+
+          </label>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
+              <ThemeToggle />
+            </li>
+            <li>
               <details>
-                <summary className="">‍ইনফো</summary>
+                <summary className="text-base">‍ইনফো</summary>
                 <ul className="p-2">
                   <li>
                     <a>Expiretion</a>
                   </li>
                   <li>
-                    <a>Yet to come! </a>
+                    <a>Yet to come!</a>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
-                <summary className="=">‍ ‍সেটিংস ‍</summary>
+                <summary>‍‍সেটিংস‍</summary>
                 <ul className="p-2">
                   <li>
                     <a>Submenu 1</a>
@@ -40,13 +53,13 @@ const DashboardNavbar = () => {
             </li>
             <li>
               <details>
-                <summary className="=">‍ভাষা</summary>
+                <summary>‍ভাষা</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Submenu 1</a>
+                    <a>English</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>বাংলা</a>
                   </li>
                 </ul>
               </details>

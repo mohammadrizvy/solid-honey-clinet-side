@@ -1,11 +1,12 @@
 import React from "react";
+import DataTable from "../../../../Components/DataTable/DataTable";
+import DashboardBreadcrumb from "../../../../Components/DashboardBreadcurm/DashboardBreadcurm";
 
 const BuyList = () => {
   return (
     <div>
-      Product Buy List : Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Commodi non illum, laudantium in eligendi possimus et a, vel unde,
-      aut est totam quod odio nam at labore quos ipsa! Nesciunt!
+      <DashboardBreadcrumb firstItem={"পণ্য ক্রয়"} secondItem={"ক্রয় তালিকা"}></DashboardBreadcrumb>
+      <DataTable></DataTable>
     </div>
   );
 };

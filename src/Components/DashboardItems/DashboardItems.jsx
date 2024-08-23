@@ -49,7 +49,7 @@ import { AiOutlineTransaction } from "react-icons/ai";
 
 const DashboardItems = () => {
   return (
-    <div>
+    <div className="bangla-regular text-base">
       <li className="pb-2">
         <Link to="/dashboard">
           <RxDashboard /> ড্যাশবোর্ড
@@ -99,16 +99,16 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="/dashboard/product-buy">
                 <FaCartArrowDown />
                 পণ্য ক্রয়
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="product-buy-list">
                 <FaListOl />
                 ক্রয় তালিকা
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
@@ -122,34 +122,34 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <a>
+              <Link to="/dashboard/product-sell-retail">
                 <VscExport />
                 খুচরা বিক্রয়
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+            <Link to="/dashboard/product-sells">
                 <FaTruckArrowRight />
                 পাইকারী বিক্রয়
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="/dashboard/product-sell-list">
                 <FaListOl />
                 বিক্রয় তালিকা
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+              <Link to="product-return">
                 <GiReturnArrow />
                 বিক্রয় পণ্য ফেরত
-              </a>
+              </Link>
             </li>
             <li>
-              <a>
+            <Link to="product-list-pending">
                 <GiBrokenAxe />
                 ড্রাফট ইনবয়েস
-              </a>
+              </Link>
             </li>
           </ul>
         </details>
