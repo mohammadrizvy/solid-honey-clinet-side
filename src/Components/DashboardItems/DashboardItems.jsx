@@ -70,7 +70,7 @@ const DashboardItems = () => {
               </Link>
             </li>
             <li>
-            <Link to="/dashboard/products-entry">
+              <Link to="/dashboard/products-entry">
                 <Layers3 size={16} />
                 একাধিক এন্ট্রি
               </Link>
@@ -128,7 +128,7 @@ const DashboardItems = () => {
               </Link>
             </li>
             <li>
-            <Link to="/dashboard/product-sells">
+              <Link to="/dashboard/product-sells">
                 <FaTruckArrowRight />
                 পাইকারী বিক্রয়
               </Link>
@@ -146,7 +146,7 @@ const DashboardItems = () => {
               </Link>
             </li>
             <li>
-            <Link to="product-list-pending">
+              <Link to="product-list-pending">
                 <GiBrokenAxe />
                 ড্রাফট ইনবয়েস
               </Link>
@@ -211,14 +211,12 @@ const DashboardItems = () => {
           <ul className="py-2">
             <li>
               <Link to="payment-customer">
-                {" "}
                 <TbUserDollar />
                 ক্রেতা পেমেন্ট
               </Link>
             </li>
             <li>
               <Link to="payment-supplier">
-                {" "}
                 <FaTruckArrowRight />
                 সরবরাহকারী পেমেন্ট
               </Link>
@@ -241,21 +239,19 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <Link to="">
-                {" "}
+              <Link to="add-customer">
                 <CgUserAdd />
                 ক্রেতা এন্ট্রি
               </Link>
             </li>
             <li>
-              <Link to="">
-                {" "}
+              <Link to="customer-list">
                 <TbUsers />
                 ক্রেতার তালিকা
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="add-point">
                 <PiHandCoinsFill />
                 পয়েন্ট ম্যানেজ
               </Link>
@@ -272,13 +268,13 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <Link to="">
+              <Link to="add-supplier">
                 <TbTruckDelivery />
                 সরবরাহকারী এন্ট্রি
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="supplier-list">
                 <CiViewList />
                 সরবরাহকারী তালিকা
               </Link>
@@ -295,25 +291,25 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <Link to="">
+              <Link to="add-transaction">
                 <LuFileInput />
                 লেনদেন এন্ট্রি
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="transaction-list">
                 <CiMemoPad />
                 সকল লেনদেন সমূহ
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="transaction-category">
                 <AiOutlineTransaction />
                 লেনদেন খাত সমূহ
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="balance-transfer">
                 <FaMoneyBillTransfer />
                 ব্যালেন্স ট্রান্সফার
               </Link>

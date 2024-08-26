@@ -1,3 +1,8 @@
+import AddCustomer from "../Dashboard/DashboardAccount/Customer/AddCustomer/AddCustomer";
+import AddPoint from "../Dashboard/DashboardAccount/Customer/AddPoint/AddPoint";
+import CustomerList from "../Dashboard/DashboardAccount/Customer/CustomerList/CustomerList";
+import AddSupllier from "../Dashboard/DashboardAccount/Supplier/AddSupplier/AddSupllier";
+import SupplierList from "../Dashboard/DashboardAccount/Supplier/SupplierList/SupplierList";
 import DashboardHome from "../Dashboard/DashboardHome/DashboardHome";
 import CustomerPayment from "../Dashboard/DashboardMain/Payment/CustomerPayment/CustomerPayment";
 import StaffPayment from "../Dashboard/DashboardMain/Payment/StaffPayment/StaffPayment";
@@ -123,7 +128,49 @@ const dashboardRoutes = {
       path: "payment-stuff",
       element: <StaffPayment />,
     },
-    
+    //!Acccount Items
+    //? Customer
+    {
+      path: "add-customer",
+      element: <AddCustomer />,
+    },
+    {
+      path: "customer-list",
+      element: <CustomerList />,
+    },
+    {
+      path: "add-point",
+      element: <AddPoint />,
+    },
+     //!Acccount Items
+    //? Supplier
+    {
+      path: "add-supplier",
+      element: <AddSupllier
+       />,
+    },
+    {
+      path: "supplier-list",
+      element: <SupplierList />,
+    },
+     //!Others
+    //? Transaction
+    {
+      path: "add-transaction",
+      element: <SupplierList />,
+    },
+    {
+      path: "transaction-list",
+      element: <SupplierList />,
+    },
+    {
+      path: "transaction-category",
+      element: <SupplierList />,
+    },
+    {
+      path: "balance-transfer",
+      element: <SupplierList />,
+    },
   ],
 };
 

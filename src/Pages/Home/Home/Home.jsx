@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className=" grid grid-cols-3">
+    <div className=" grid grid-cols-3 md:gir">
       {" "}
       <div className="card bg-base-100 w-96 shadow-xl">
         <figure>
