@@ -24,6 +24,17 @@ import StockDamage from "../Dashboard/DashboardMain/Stock/StockDamage/StockDamag
 import StockExpiration from "../Dashboard/DashboardMain/Stock/StockExpiration/StockExpiration";
 import StockExpired from "../Dashboard/DashboardMain/Stock/StockExpried/StockExpired";
 import StockProduct from "../Dashboard/DashboardMain/Stock/StockProduct/StockProduct";
+import Report from "../Dashboard/DashboardOthers/Report/Report/Report";
+import BlunkSms from "../Dashboard/DashboardOthers/Sms/BlunkSms/BlunkSms";
+import DueSms from "../Dashboard/DashboardOthers/Sms/DueSms/DueSms";
+import SendSms from "../Dashboard/DashboardOthers/Sms/SendSms/SendSms";
+import SmsBalance from "../Dashboard/DashboardOthers/Sms/SmsBalance/SmsBalance";
+import AddTransaction from "../Dashboard/DashboardOthers/Transaction/AddTransaction/AddTransaction";
+import BalanceTransfer from "../Dashboard/DashboardOthers/Transaction/BalanceTransfer/BalanceTransfer";
+import TransactionCategory from "../Dashboard/DashboardOthers/Transaction/TransactionCategory/TransactionCategory";
+import TransationList from "../Dashboard/DashboardOthers/Transaction/TransactonList/TransationList";
+import AddUser from "../Dashboard/DashboardOthers/UserAccount/AddUser/AddUser";
+import UserList from "../Dashboard/DashboardOthers/UserAccount/UserList/UserList";
 import DashboardLayout from "../Layout/DashboardLayout/DashboardLayout";
 
 const dashboardRoutes = {
@@ -153,23 +164,58 @@ const dashboardRoutes = {
       path: "supplier-list",
       element: <SupplierList />,
     },
+
      //!Others
     //? Transaction
     {
       path: "add-transaction",
-      element: <SupplierList />,
+      element: <AddTransaction />,
     },
     {
       path: "transaction-list",
-      element: <SupplierList />,
+      element: <TransationList />,
     },
     {
       path: "transaction-category",
-      element: <SupplierList />,
+      element: <TransactionCategory />,
     },
     {
       path: "balance-transfer",
-      element: <SupplierList />,
+      element: <BalanceTransfer />,
+    },
+     //!Others
+    //? Report
+    {
+      path: "report",
+      element: <Report />,
+    },
+     //!Others
+    //? Report
+    {
+      path: "sms-static",
+      element: <SendSms />,
+    },
+    {
+      path: "sms-due",
+      element: <DueSms />,
+    },
+    {
+      path: "sms-bunk",
+      element: <BlunkSms />,
+    },
+    {
+      path: "sms-balance",
+      element: <SmsBalance />,
+    },
+     //!Others
+    //? User Account
+    {
+      path: "user-add",
+      element: <AddUser />,
+    },
+    {
+      path: "user-list",
+      element: <UserList />,
     },
   ],
 };

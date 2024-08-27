@@ -15,10 +15,10 @@ const ProductsEntry = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-4">
+        <DashboardBreadcrumb firstItem={"পণ্য"} secondItem={"একাধিক এন্ট্রি"} />
       <div className="bg-white shadow-md rounded p-10">
         {/* Breadcrumb */}
-        <DashboardBreadcrumb firstItem={"পণ্য"} secondItem={"একাধিক এন্ট্রি"} />
 
         {entries.map((entry, index) => (
           <div

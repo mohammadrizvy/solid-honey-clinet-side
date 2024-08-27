@@ -91,7 +91,7 @@ const AddCustomer = () => {
         </div>
 
         {/* Form Buttons */}
-        <div className="flex justify-end mt-4 space-x-2">
+        <div className="flex  mt-4 space-x-2">
           <button className="btn btn-secondary">সেভ</button>
           <button className="btn btn-primary">রিসেট</button>
         </div>

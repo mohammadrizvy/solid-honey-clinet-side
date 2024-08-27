@@ -2,11 +2,17 @@ import React from "react";
 import useProduct from "../../../../Hooks/useProduct";
 import { FaEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
+import DashboardBreadcrumb from "../../../../Components/DashboardBreadcurm/DashboardBreadcurm";
 
 const ProductCategory = () => {
   const [products, loading] = useProduct();
   return (
-    <div>
+    <div className="container mx-auto p-4">
+
+    <DashboardBreadcrumb
+    firstItem={"পণ্য"}
+    secondItem={"পণ্যের তালিকা"}/>
+
       <div className="overflow-x-auto">
         <table className="table table-zebra w-full">
           <thead>

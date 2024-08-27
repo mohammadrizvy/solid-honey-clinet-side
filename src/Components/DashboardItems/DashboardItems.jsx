@@ -319,7 +319,7 @@ const DashboardItems = () => {
       </li>
 
       <li>
-        <Link to="">
+        <Link to="report">
           <RiListSettingsLine />
           প্রতিবেদন
         </Link>
@@ -333,25 +333,25 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <Link to="">
+              <Link to="sms-static">
                 <FaSms />
                 সেন্ড এসএমএস
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="sms-due">
                 <MdOutlineSms />
                 বকেয়া এসএমএস
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="sms-bunk">
                 <MdSmsFailed />
                 বাল্ক এসএমএস
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="sms-balance">
                 <TbMoneybag />
                 SMS Balance
               </Link>
@@ -368,13 +368,13 @@ const DashboardItems = () => {
           </summary>
           <ul className="py-2">
             <li>
-              <Link to="">
+              <Link to="user-add">
                 <TiUserAdd />
                 এড ইউজার
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="user-list">
                 <FaUsers />
                 ইউজার তালিকা
               </Link>

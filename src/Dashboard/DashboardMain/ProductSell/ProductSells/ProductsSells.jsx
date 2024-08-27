@@ -1,12 +1,14 @@
 import React from 'react';
+import DashboardBreadcrumb from '../../../../Components/DashboardBreadcurm/DashboardBreadcurm';
+import { MdDeleteForever } from 'react-icons/md';
 
 const ProductsSells = () => {
     return (
-        <div className="p-6 bg-white rounded-lg shadow-md flex flex-col md:flex-row">
+        <div className="p-6 rounded-lg shadow-md flex flex-col md:flex-row">
         <div className="flex-1">
-          <div className="text-lg font-semibold mb-4">
-            বিক্রয় = পাইকারী বিক্রয়
-          </div>
+        <DashboardBreadcrumb
+        firstItem={"বিক্রয়"}
+        secondItem={"পাইকারী বিক্রয়"}/>
           
           <div className="grid grid-cols-4 gap-4 mb-4">
             <input type="date" className="input input-bordered w-full" defaultValue="2024-08-22" />
@@ -19,14 +21,14 @@ const ProductsSells = () => {
   
           <div className="flex items-center mb-4">
             <input type="text" className="input input-bordered w-full bg-green-700 text-white" placeholder="Search the Product" />
-            <input type="text" className="input input-bordered ml-4 bg-green-700 text-white" placeholder="গ্রুপ ইউনিট" />
-            <input type="number" className="input input-bordered ml-4 bg-green-700 text-white" placeholder="পরিমান" />
-            <input type="number" className="input input-bordered ml-4 bg-green-700 text-white" placeholder="মূল্য" />
-            <button className="btn btn-error ml-4">Add</button>
+            <input type="text" className="input input-bordered w-[30%] ml-4 bg-green-700 text-white" placeholder="গ্রুপ ইউনিট" />
+            <input type="number" className="input input-bordered w-[30%] ml-4 bg-green-700 text-white" placeholder="পরিমান" />
+            <input type="number" className="input input-bordered w-[30%] ml-4 bg-green-700 text-white" placeholder="মূল্য" />
+            <button className="btn btn-error text-white ml-4">Add</button>
           </div>
   
           <table className="table w-full mb-4">
-            <thead>
+            <thead> 
               <tr className="bg-green-400">
                 <th></th>
                 <th>ধরণ</th>
@@ -43,7 +45,7 @@ const ProductsSells = () => {
             <tbody>
               {/* Map through products here */}
               <tr>
-                <td><button className="btn btn-square btn-error btn-sm"><i className="fa fa-trash"></i></button></td>
+                <td><button className="btn btn-square btn-error btn-sm"><MdDeleteForever color='white' size={20} /></button></td>
                 <td>/* Type */</td>
                 <td>/* Barcode */</td>
                 <td>/* Description */</td>

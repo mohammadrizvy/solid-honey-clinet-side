@@ -13,7 +13,7 @@ const ProductList = () => {
   console.log(products)
 
   return (
-    <div className="">
+    <div className="container mx-auto p-4">
       <DashboardBreadcrumb
     firstItem={"পণ্য"}
     secondItem={"পণ্যের তালিকা"}/>

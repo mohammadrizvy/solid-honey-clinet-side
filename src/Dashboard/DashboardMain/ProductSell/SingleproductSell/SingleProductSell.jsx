@@ -1,12 +1,16 @@
 import React from 'react';
+import DashboardBreadcrumb from '../../../../Components/DashboardBreadcurm/DashboardBreadcurm';
 
 const SingleProductSell = () => {
     return (
-        <div className="p-6 bg-white rounded-lg shadow-md flex flex-col md:flex-row">
+      <div className="container mx-auto p-4">
+     
+
+        <DashboardBreadcrumb
+        firstItem={"বিক্রয়"}
+        secondItem={"খুচরা বিক্রয়"}/>
+<div className="p-6 bg-white rounded-lg shadow-md flex flex-col md:flex-row">
         <div className="flex-1">
-          <div className="text-lg font-semibold mb-4">
-            বিক্রয় = খুচরা বিক্রয়
-          </div>
           
           <div className="grid grid-cols-4 gap-4 mb-4">
             <input type="date" className="input input-bordered w-full" defaultValue="2024-08-22" />
@@ -94,6 +98,8 @@ const SingleProductSell = () => {
           <button className="btn btn-primary w-full">সেভ</button>
         </div>
       </div>
+      </div>
+        
     );
 };
 

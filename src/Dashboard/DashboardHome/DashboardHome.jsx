@@ -1,6 +1,8 @@
 import React from "react";
 import LineChart from "../../Components/LineChart/LineChart";
 import PieChart from "../../Components/PieChart/PieChart";
+import CustomLineChart from "../../Components/LineChart/LineChart";
+import { ArrowRightLeft, ShoppingCart, UserCog, Wallet } from "lucide-react";
 
 const DashboardHome = () => {
   return (
@@ -9,7 +11,11 @@ const DashboardHome = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
         <div className="card bg-primary shadow-lg">
           <div className="card-body">
-            <h2 className="card-title">একাউন্ট</h2>
+            <h2 className="card-title  ">
+              <UserCog className="-mt-1" />
+              একাউন্ট
+            </h2>
+
             <p>ক্রেতা: 0</p>
             <p>সরবরাহকারী: 1</p>
             <p>কর্মী: 0</p>
@@ -17,7 +23,7 @@ const DashboardHome = () => {
         </div>
         <div className="card bg-primary shadow-lg">
           <div className="card-body">
-            <h2 className="card-title">আজকের বিক্রয়</h2>
+            <h2 className="card-title"> <ShoppingCart />আজকের বিক্রয়</h2>
             <p>মোট বিক্রয়: 240</p>
             <p>নগদ বিক্রয়: 240</p>
             <p>বাকি বিক্রয়: 0</p>
@@ -25,7 +31,7 @@ const DashboardHome = () => {
         </div>
         <div className="card bg-primary shadow-lg">
           <div className="card-body">
-            <h2 className="card-title">আজকের লেনদেন</h2>
+            <h2 className="card-title"> <ArrowRightLeft />আজকের লেনদেন</h2>
             <p>নগদ গ্রহণ: 240</p>
             <p>নগদ প্রদান: 0</p>
             <p>নগদ ব্যালেন্স: 240</p>
@@ -33,7 +39,7 @@ const DashboardHome = () => {
         </div>
         <div className="card bg-primary shadow-lg">
           <div className="card-body">
-            <h2 className="card-title">ব্যালেন্স</h2>
+            <h2 className="card-title"> <Wallet />ব্যালেন্স</h2>
             <p>সরবরাহকারী বকেয়া :9,875</p>
             <p>সরবরাহকারী বকেয়া :9,875</p>
             <p>ক্রেতার বকেয়া :0</p>
@@ -43,18 +49,22 @@ const DashboardHome = () => {
       </div>
 
       {/* Charts Section */}
-      <div className="card  shadow-lg">
+      <div className="card p-10 bg-base-200 mt-6  shadow-lg">
         <div className="card-body">
           <h2 className="card-title">সাম্প্রতিক বিক্রয় (লাইন চার্ট)</h2>
-          <LineChart />
+          <div className="w-[100%] h-[300px]  ">
+            <CustomLineChart />
+          </div>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-4">
-        <div className="card  shadow-lg">
+      <div className="grid lg:grid-cols-2  sm:grid-cols-1 gap-4 mt-4">
+        <div className="card bg-base-200 shadow-lg">
           <div className="card-body">
             <h2 className="card-title">সাম্প্রতিক বিক্রয় (পাই চার্ট)</h2>
-            <PieChart />
+            <div className="w-[400px]">
+              <PieChart />
+            </div>
           </div>
         </div>
 
@@ -78,12 +88,9 @@ const DashboardHome = () => {
         <div className="card bg-primary shadow-lg">
           <div className="card-body">
             <h2 className="card-title">আজকের নগদ গ্রহন</h2>
-            <p>Sales Invoice of: 10080240
-            </p>
-            <p>Sales Invoice of: 10080240
-            </p>
-            <p>Sales Invoice of: 10080240
-            </p>
+            <p>Sales Invoice of: 10080240</p>
+            <p>Sales Invoice of: 10080240</p>
+            <p>Sales Invoice of: 10080240</p>
           </div>
         </div>
         <div className="card bg-primary shadow-lg">

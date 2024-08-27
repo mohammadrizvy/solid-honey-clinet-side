@@ -4,7 +4,7 @@ import DashboardBreadcrumb from "../../../../Components/DashboardBreadcurm/Dashb
 
 const BuyList = () => {
   return (
-    <div>
+    <div className="container mx-auto p-4" >
       <DashboardBreadcrumb firstItem={"পণ্য ক্রয়"} secondItem={"ক্রয় তালিকা"}></DashboardBreadcrumb>
       <DataTable></DataTable>
     </div>

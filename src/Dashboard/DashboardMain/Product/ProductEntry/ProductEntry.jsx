@@ -33,10 +33,10 @@ const ProductEntry = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-4">
+        <DashboardBreadcrumb firstItem={"পণ্য"} secondItem={"পণ্য এন্ট্রি"} />
       <div className="bg-white shadow-md rounded p-10">
         {/* Breadcrumb */}
-        <DashboardBreadcrumb firstItem={"পণ্য"} secondItem={"পণ্য এন্ট্রি"} />
 
         {/* Form */}
         <form onSubmit={handleSubmit}>
